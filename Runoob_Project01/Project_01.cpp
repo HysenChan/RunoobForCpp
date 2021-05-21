@@ -83,6 +83,6 @@ int main()
 	//defineFunc();
 	//twoDifferentInt();
 	//staticFunc();
-	externForSupport();
+	//externForSupport();
 	return 0;
 }

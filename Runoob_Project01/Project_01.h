@@ -2,6 +2,7 @@
 #include <iostream>
 #include<stdio.h>
 #include<vector>
+#include<string>
 
 // ±äÁ¿ÉùÃ÷
 extern int a, b;
