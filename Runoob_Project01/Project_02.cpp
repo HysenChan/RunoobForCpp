@@ -69,9 +69,38 @@ void pointerArray()
 	arrayDecrease(ptr, var, MAX);//递减
 }
 
+void twoPointerFunc()
+{
+	int var;
+	int* ptr;
+	int** pptr;
+
+	var = 3000;
+
+	//获取var的地址
+	ptr = &var;
+
+	//使用运算符&获取ptr的地址
+	pptr = &ptr;
+
+	//使用pptr获取值
+	cout << "var值为：" << var << endl;
+	cout << "*ptr值为：" << *ptr << endl;
+	cout << "**pptr值为：" << **pptr << endl;
+
+	//获取地址  pptr->ptr->var;	pptr=&ptr;	ptr=&var
+	//下面2个地址相同
+	cout << "&var地址为：" << &var << endl;
+	cout << "ptr地址为：" << ptr<< endl;
+	//下面2个地址相同
+	cout << "&ptr地址为：" << &ptr << endl;
+	cout << "pptr地址为：" << pptr << endl;
+}
+
 int main()
 {
 	//pointFunc();
-	pointerArray();
+	//pointerArray();
+	twoPointerFunc();
 	return 0;
 }
