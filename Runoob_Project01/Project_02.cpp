@@ -97,10 +97,28 @@ void twoPointerFunc()
 	cout << "pptr地址为：" << pptr << endl;
 }
 
+void getSecond(unsigned long* par)
+{
+	//获取当前的秒数
+	*par = time(NULL);
+	return;
+}
+
+void pointerToFunc()
+{
+	unsigned long sec;
+
+	getSecond(&sec);
+
+	//输出实际值
+	cout << "Number of seconds:" << sec << endl;
+}
+
 int main()
 {
 	//pointFunc();
 	//pointerArray();
-	twoPointerFunc();
+	//twoPointerFunc();
+	pointerToFunc();
 	return 0;
 }
